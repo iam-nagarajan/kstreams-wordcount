@@ -18,7 +18,7 @@ Run from IDE or as a executable jar
 
 **Start console consumer inside Kafka container to observe output**
 
-`kafka-console-consumer --bootstrap-server localhost:9092 --key-deserializer org.apache.kafka.common.serialization.StringDeserializer --value-deserializer org.apache.kafka.common.serialization.LongDeserializer --property print.key=true --property print.value=true`
+`kafka-console-consumer --bootstrap-server localhost:9092 --key-deserializer org.apache.kafka.common.serialization.StringDeserializer --value-deserializer org.apache.kafka.common.serialization.LongDeserializer --property print.key=true --property print.value=true --topic wordcount-output`
 
 **Produce input**
 
